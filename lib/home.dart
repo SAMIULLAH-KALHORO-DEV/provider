@@ -18,6 +18,8 @@ class HomeScreen extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
+          // using setState in a StatelessWidget is not allowed,
+          // but for demonstration, we will just increment x directly.
           x++;
           print('x incremented to $x');
         },
